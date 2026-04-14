@@ -1,10 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from "./components/Header";
+import Hero from "./components/Hero";
 
 function App() {
   return (
-   <div className="min-h-screen flex items-center justify-center bg-blue-500 text-white text-4xl">
-      Tailwind is Working ✅
+   <div className="">
+      <Header/>
+      <Hero/>
+
     </div>
   );
 }
