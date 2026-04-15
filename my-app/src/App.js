@@ -1,14 +1,25 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import DataDesign from './components/DataDesign'; // Capitalized Import
+import datajson from './components/datajson';
 
 function App() {
   return (
-   <div className="">
-      <Header/>
-      <Hero/>
-
+    <div className="">
+      <Header />
+      <Hero />
+      
+      {datajson.map((x) => {
+        return (
+          // Use the Capitalized component name here
+          // Also, move the 'key' to the outermost element in the map (the Fragment)
+          <>
+            <DataDesign key={x.id} id={x.id} name={x.name} />
+          </>
+        );
+      })}
     </div>
   );
 }
