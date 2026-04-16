@@ -9,14 +9,19 @@ function App() {
   return (
     <div className="">
       <Header />
-      <Hero />
+      {datajson.map((x)=>{
+        return(
+        <Hero name={x.name} />
+        )
+      }) }
+      
       
       {datajson.map((x) => {
         return (
           // Use the Capitalized component name here
           // Also, move the 'key' to the outermost element in the map (the Fragment)
           <>
-            <DataDesign key={x.id} id={x.id} name={x.name} />
+            <DataDesign  id={x.id} name={x.name} />
           </>
         );
       })}
