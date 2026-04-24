@@ -2,7 +2,10 @@ import React from 'react'
 
 function Routing() {
   return (
-    <div>Routing</div>
+    <div>Routing
+      <h2>asdf</h2>
+    </div>
+    
   )
 }
 
