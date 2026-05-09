@@ -14,6 +14,7 @@ function Navbar() {
         <NavLink to="/contact" style={styles.link}>Contact</NavLink>
         <NavLink to="/dashboard" style={styles.link}>Dashboard</NavLink>
         <NavLink to="/products" style={styles.link}>Products</NavLink>
+ <NavLink to="/products" style={styles.link}>Products</NavLink>
 
       </div>
 
